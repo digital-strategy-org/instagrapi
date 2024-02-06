@@ -377,6 +377,7 @@ class LoginMixin(PreLoginFlowMixin, PostLoginFlowMixin):
         password: Union[str, None] = None,
         relogin: bool = False,
         verification_code: str = "",
+        verification_method: str = "2",
     ) -> bool:
         """
         Login
@@ -460,7 +461,7 @@ class LoginMixin(PreLoginFlowMixin, PostLoginFlowMixin):
                 "guid": self.uuid,
                 "device_id": self.android_device_id,
                 "waterfall_id": str(uuid4()),
-                "verification_method": "3",
+                "verification_method": verification_method,
             }
             logged = self.private_request(
                 "accounts/two_factor_login/", data, login=True
