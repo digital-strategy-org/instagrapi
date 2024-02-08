@@ -30,12 +30,11 @@ requirements = [
 # ]
 
 setup(
-    name="instagrapi",
-    version="2.0.4",
-    author="Mark Subzeroid",
-    author_email="143403577+subzeroid@users.noreply.github.com",
-    license="MIT",
-    url="https://github.com/subzeroid/instagrapi",
+    name="instagrapi-ib",
+    version="0.0.1",
+    author="Ivan Bacigaluppo",
+    author_email="ivanbac1896@gmail.com",
+    url="https://github.com/digital-strategy-org/instagrapi",
     install_requires=requirements,
     keywords=[
         "instagram private api",
@@ -74,8 +73,6 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Topic :: Software Development :: Libraries :: Python Modules",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
